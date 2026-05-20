@@ -4,3 +4,86 @@
 
 html, body, #root { min-height: 100%; }
 body { margin: 0; }
+/* MOBILE FIX FOR BLOOM ENGLISH */
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  #root > div {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  aside {
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+    border-right: none !important;
+    border-bottom: 1px solid #fce4ec !important;
+    padding: 14px !important;
+  }
+
+  aside h1 {
+    margin-bottom: 12px !important;
+    font-size: 22px !important;
+  }
+
+  aside nav {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  aside nav button {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4px !important;
+    padding: 10px 6px !important;
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+
+  main,
+  .flex-1 {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .p-8 {
+    padding: 16px !important;
+  }
+
+  .max-w-2xl,
+  .max-w-4xl,
+  .max-w-5xl,
+  .max-w-6xl {
+    max-width: 100% !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .rounded-3xl {
+    border-radius: 20px !important;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+  }
+}
