@@ -1,0 +1,18 @@
+{
+  "name": "Bloom English A1",
+  "short_name": "Bloom A1",
+  "description": "Cute beginner-friendly English learning app for A1 students.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff7fb",
+  "theme_color": "#f43f5e",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
