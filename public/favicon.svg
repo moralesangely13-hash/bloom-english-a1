@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#fff7fb"/>
+  <rect x="60" y="60" width="392" height="392" rx="72" fill="#ffe4ef"/>
+  <rect x="130" y="120" width="252" height="296" rx="32" fill="#fff" stroke="#f43f5e" stroke-width="12"/>
+  <text x="178" y="174" font-size="72" font-family="Arial, sans-serif" font-weight="700" fill="#e11d48">ABC</text>
+  <rect x="152" y="210" width="208" height="18" rx="9" fill="#fecdd3"/>
+  <rect x="152" y="252" width="208" height="18" rx="9" fill="#fecdd3"/>
+  <rect x="152" y="294" width="150" height="18" rx="9" fill="#fecdd3"/>
+  <text x="320" y="360" font-size="68">✨</text>
+</svg>

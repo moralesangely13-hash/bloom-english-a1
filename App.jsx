@@ -264,8 +264,9 @@ export default function App() {
   // --- SUB COMPONENTS (PAGES) ---
 
   const Sidebar = () => (
-    <aside className="w-64 bg-white border-r p-6 h-screen flex flex-col shadow-sm">
-      <h1 className="text-2xl font-bold text-rose-600 mb-10 flex items-center gap-2"><BrainCircuit /> BLOOM</h1>
+    <aside className="w-64 bg-white/95 backdrop-blur border-r p-6 h-screen flex flex-col shadow-sm">
+      <h1 className="text-2xl font-bold text-rose-600 mb-2 flex items-center gap-2"><BrainCircuit /> BLOOM</h1>
+      <p className="text-sm text-stone-500 mb-6">A1 English Learning App</p>
       <nav className="space-y-2 flex-1">
         {[
           { id: 'home', label: 'Home', icon: Home },
@@ -281,7 +282,7 @@ export default function App() {
           <button 
             key={item.id}
             onClick={() => setActiveSection(item.id)}
-            className={`w-full flex items-center gap-3 p-3 rounded-xl font-medium ${activeSection === item.id ? 'bg-rose-50 text-rose-600' : 'text-stone-600 hover:bg-stone-50'}`}
+            className={`w-full flex items-center gap-3 p-3 rounded-xl font-medium transition ${activeSection === item.id ? 'bg-rose-50 text-rose-600 shadow-sm ring-1 ring-rose-100' : 'text-stone-600 hover:bg-stone-50'}`}
           >
             <item.icon size={20} />
             {item.label}
@@ -1285,7 +1286,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen bg-stone-50 text-stone-900 font-sans">
       <Sidebar />
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto pb-8">
         {activeSection === 'home' && <HomeView />}
         {activeSection === 'vocabulary' && <VocabularyPage />}
         {activeSection === 'lab' && <LabPage />}
